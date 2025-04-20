@@ -59,10 +59,11 @@
 }
 
 /* Base Reset */
-*, *::before, *::after {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
 
 html {
@@ -71,6 +72,8 @@ html {
   scroll-padding-top: 80px; /* For fixed headers, adjust as needed */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -80,6 +83,7 @@ body {
   color: var(--dark);
   background-color: var(--white);
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* Container */
@@ -88,6 +92,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-lg);
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 /* Typography */
